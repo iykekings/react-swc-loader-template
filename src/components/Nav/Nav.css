@@ -1,4 +1,6 @@
 ul {
   display: flex;
   align-items: center;
+  list-style: none;
+  gap: 1rem;
 }
