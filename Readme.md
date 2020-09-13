@@ -16,6 +16,6 @@
 
 - `npm i`
 
-- Start dev server: `npm run start:live`
+- Start dev server: `npm start`
 
 - build: `npm run build`

@@ -1,6 +1,11 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5vw;
+}
 ul {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1rem;
+  gap: 1.5rem;
 }

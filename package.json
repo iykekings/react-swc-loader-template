@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "start": "webpack-dev-server --open --mode development",
-    "start:live": "webpack-dev-server --open --mode development --liveReload"
+    "build": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "start": "webpack-dev-server --open --liveReload --config webpack.dev.js",
+    "start:prod": "webpack-dev-server --open --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -18,15 +18,18 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
-    "css-loader": "^4.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.0",
     "eslint": "^7.7.0",
     "eslint-plugin-react": "^7.20.6",
     "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
+    "image-config-webpack-plugin": "^2.0.0",
+    "scss-config-webpack-plugin": "^2.0.0",
     "swc-loader": "^0.1.12",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
   },
   "dependencies": {
     "react": "^16.13.1",
